@@ -5,3 +5,14 @@ tags: hello
 ---
 
 # First
+
+```csharp
+using System;
+
+class Program{
+    public static void Main(string args[]){
+        Console.Writeline("Hello World")
+    }
+}
+
+```

@@ -53,10 +53,10 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -106,9 +106,9 @@ customize:
   show_all_posts: true
   highlight: dark.styl
   social_links:
-    github: your-github-url
-    twitter: your-twitter-url
-    NAME: your-NAME-url
+    #github: your-github-url
+    twitter: https://twitter.com/JohannesSLueke
+    #NAME: your-NAME-url
   
 
 # Deployment
