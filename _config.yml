@@ -3,17 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Blog
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Johannes Lüke
 language: en
 timezone: ''
+rss:
 
+copyright:
+  start_year: 2020
+  end_year:
+
+    
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+#url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -93,7 +99,17 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: cactus 
+
+
+customize:
+  show_all_posts: true
+  highlight: dark.styl
+  social_links:
+    github: your-github-url
+    twitter: your-twitter-url
+    NAME: your-NAME-url
+  
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
