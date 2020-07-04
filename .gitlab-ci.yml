@@ -2,6 +2,9 @@
 # Full project: https://gitlab.com/pages/hexo
 image: node:10.15.3
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
 pages:
   script:
     - npm install hexo-cli -g
