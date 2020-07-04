@@ -4,9 +4,10 @@ image: node:10.15.3
 
 pages:
   script:
-    - git pull --recurse-submodules
     - npm install hexo-cli -g
     - test -e package.json && npm install
+    - ls -lisa
+    - git pull --recurse-submodules
     - hexo generate
   artifacts:
     paths:
