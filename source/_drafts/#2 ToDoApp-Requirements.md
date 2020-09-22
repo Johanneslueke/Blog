@@ -1,6 +1,5 @@
 ---
-title: ToDo App - The Requirements
-date: 22.09.2020
+title: ToDo App - The Requirements 
 tags: App-Development, Web-Development, Requirement
 ---
 
