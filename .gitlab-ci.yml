@@ -1,21 +1,27 @@
-# This file is a template, and might need editing before it works on your project.
-# Full project: https://gitlab.com/pages/hexo
+# You can override the included template(s) by including variable overrides
+# See https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#priority-of-environment-variables
 image: node:10.15.3
-
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-
 pages:
   script:
-    - npm install hexo-cli -g
-    - test -e package.json && npm install
-    - hexo generate
+  - npm install hexo-cli -g
+  - test -e package.json && npm install
+  - hexo generate
   artifacts:
     paths:
-      - public
+    - public
   cache:
     paths:
-      - node_modules
+    - node_modules
     key: project
   only:
-    - master
+  - master
+stages:
+- test
+sast:
+  stage: test
+include:
+- template: Security/SAST.gitlab-ci.yml
